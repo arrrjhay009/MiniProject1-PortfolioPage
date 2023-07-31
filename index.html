@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="web design, html, css, portfolio, John Doe">
+    <title>John Doe - Portfolio</title>
+
+    <!-- EXTERNAL RESOURCES -->
+
+    <!-- Bootstrap CDN Link -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,800&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utils.css">
+
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="container">
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">J<span class="header__span">D</span>&dot;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarNav" style="text-align: right;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero container">
+            <img class="hero__img" src="images/profileImage.webp" alt="Photo by Mark Farías on Unsplash">
+            <h2 class="hero__subtitle">Hello! I'm John Doe 👋</h2>
+            <h1 class="hero__title">FRONT-END <br>WEB DEVELOPER.</h1>
+            <p class="hero__description">
+            A passionate and creative <strong>Front-End Web Developer</strong> with a strong focus on crafting user-friendly and visually appealing websites. With a background in computer science and several years of professional experience, I specialize in front-end development, responsive design, and creating seamless user experiences. I am committed to staying up-to-date with the latest web technologies and best practices to deliver high-quality projects.
+            </p>
+            <a class="btn btn-success" href="#">Reach out</a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about container">
+            <div class="about__content">
+                <h2 class="about__title">About Me</h2>
+                <p class="about__description">
+                I'm a highly motivated individual who thrives on challenges and constantly seeks opportunities to expand my skillset. My journey as a web developer began during my college days when I realized the power of turning ideas into functional and visually stunning websites. Since then, I have been on a quest to create meaningful web experiences that leave a lasting impact on users.
+                </p>
+                <hr class="about__hr">
+                <div class="about__skills">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="true">Skills</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="false">Experience</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+                            <ul class="about__ul">
+                            <li class="about__list" style="color: var(--bs-success);">Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Bootstrap, Material UI</li>
+                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-success" style="width: 90%"></div>
+                            </div></li>
+                            <li class="about__list" style="color: var(--bs-warning);">Back-end: Node.js</li>
+                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-warning" style="width: 95%"></div></div></li>
+                            <li class="about__list" style="color: var(--bs-danger);">Database: MongoDB, MySQL</li>
+                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-danger" style="width: 87%"></div></div></li>
+                            <li class="about__list" style="color: var(--bs-info);">Version Control: Git, GitHub, Bitbucket</li>
+                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-info" style="width: 100%"></div></div></li>
+                            <li class="about__list" style="color: var(--bs-light);">Other: RESTful APIs, JSON, Responsive Web Design, Cross-Browser Compatibility, Web Performance Optimization</li>
+                        </ul></div>
+                        <div class="tab-pane fade" id="experience-tab-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
+                          <ul class="about__ul">
+                            <li class="about__listTitle">Web Developer - Tech Solutions Inc.</li>
+                            <li class="about__list">January 20XX - Present</li>
+                            <li class="about__list">Collaborated with cross-functional teams to deliver web projects for clients.</li>
+                            <li class="about__list">Developed and maintained responsive websites to improve user experience and drive engagement.</li>
+                            <li class="about__list">Conducted code reviews and provided feedback to ensure code quality and standards.</li>
+                        </ul>
+                        <ul class="about__ul">
+                            <li class="about__listTitle">Junior Web Developer - WebWorks Agency</li>
+                            <li class="about__list">January 20XX - December 20XX</li>
+                            <li class="about__list">Assisted in front-end development tasks for various client projects.</li>
+                            <li class="about__list">Worked closely with designers to implement website mockups and prototypes.</li>
+                            <li class="about__list">Gained experience with version control using Git.</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                            <ul class="about__ul">
+                                <li class="about__listTitle">Bachelor of Science in Computer Science</li>
+                                <li class="about__list">XYZ University</li>
+                                <li class="about__list">Graduated: May 20XX</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects container">
+          <div class="projects__content">
+            <h2 class="projects__title">Projects</h2>
+      <p class="projects__description">
+        These are the projects that I've been working on this past years of being a Web Developer
+      </p>
+      <hr class="about__hr">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/portfolio.webp" class="d-block w-100" alt="Portfolio Webpage">
+                  <div class="carousel-caption d-none d-md-block">
+                    <a class="btn btn-success" href="https://arrrjhay009.github.io/PF-Exercise/" target="_blank">Visit Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/photoGallery.webp" class="d-block w-100" alt="Photo Gallery Website">
+                  <div class="carousel-caption d-none d-md-block">
+                    <a class="btn btn-success" href="https://arrrjhay009.github.io/CSS-Exercise2/" target="_blank">Visit Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/teaShop.webp" class="d-block w-100" alt="Teashop Website">
+                  <div class="carousel-caption d-none d-md-block">
+                    <a class="btn btn-success" href="https://arrrjhay009.github.io/CSS-Exercise/" target="_blank"> Visit Website</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact container">
+        <div class="contact__container">
+          <h2 class="contact__title">Get In Contact</h2>
+          <div class="contact__left">
+              <h2 class="contact__heading--h2">Hit me up!</h2>
+              <p><i class="fa-solid fa-envelope fa-xl"></i>johndoe01@gmail.com</p>
+              <p><i class="fa-solid fa-phone fa-xl"></i>+ 639 912 345 6789</p>
+              <div class="contact__left--icons">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="downloads/sample.pdf" download class="downloadCV btn btn-success">Download CV</a>
+          </div>
+          <div class="contact__right">
+            <p class="contact__description">
+              Whether you are starting a project, have business inquiries or just
+              want to say hi, my inbox is always open so feel free to reach out and
+              I will get back to you as soon as possible.
+            </p>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="John Doe">
+              <label for="floatingName">Name</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+              <label for="floatingEmail">Email Address</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 200px"></textarea>
+              <label for="floatingMessage">Message</label>
+            </div>
+            <a class="mailTo btn btn-success" href="mailto:johndoe001@gmail.com" target="_blank">React Out</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer container">
+      <h3 class="footer__title">Copyright 2023 &#169; John Doe</h3>
+    </footer>
+
+
+    <!-- Button for Back to Top feature -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#198754" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+    </svg></button>
+
+
+    <!-- Embedded Script for Back to Top feature -->
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+        }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    
+    <!-- Bootstrap Script Resource -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    
+    <!-- FONTAWESOME RESOURCE SCRIPT -->
+    <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous" defer></script>
+</body>
+</html>

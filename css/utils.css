@@ -1,0 +1,150 @@
+.container {
+    border: 1px solid red;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+  /* xs */
+ @media only screen and (max-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+
+    .about {
+        margin-top: 2rem;
+        height: 135vh;
+    }
+
+    .projects {
+        height: 70vh;
+    }
+
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'title title'
+            'contact1 contact1'
+            'contact2 contact2';
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact__left--icons {
+        text-align: center;
+    }
+    
+    .downloadCV {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact__right {
+        margin-top: 2.5rem;
+    }
+
+    .mailTo {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /* sm */
+  @media only screen and (max-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+
+    /* .about {
+        height: 250vh;
+    } */
+
+    .contact {
+        margin-top: 1rem;
+    }
+  }
+  
+  /* md */
+  @media only screen and (max-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+
+    .about {
+        height: 115vh;
+    }
+
+    .projects {
+        height: 80vh;
+    }
+
+    .contact__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'title title'
+            'contact1 contact1'
+            'contact2 contact2';
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact__left--icons {
+        text-align: center;
+    }
+    
+    .downloadCV {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact__right {
+        margin-top: 2.5rem;
+    }
+
+    .mailTo {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /* lg */
+  @media only screen and (max-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+
+    .projects {
+        height: fit-content;
+    }
+  
+    /* .section {
+      margin-top: 10rem;
+    } */
+
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+
+    .projects {
+        height: fit-content;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
