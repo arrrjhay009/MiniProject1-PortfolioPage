@@ -1,5 +1,5 @@
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -17,13 +17,17 @@
       max-width: 475px;
     }
 
-    .about {
+    #about {
         margin-top: 2rem;
         height: 135vh;
     }
 
     .projects {
         height: 70vh;
+    }
+
+    #testimonials {
+      height: 120vh;
     }
 
     .contact__container {
@@ -66,6 +70,10 @@
         height: 250vh;
     } */
 
+    #testimonials {
+      height: 100vh;
+    }
+
     .contact {
         margin-top: 1rem;
     }
@@ -83,6 +91,14 @@
 
     .projects {
         height: 80vh;
+    }
+
+    .project__link {
+      pointer-events: none;
+    }
+
+    .testimonials {
+      height: 90vh;
     }
 
     .contact__container {

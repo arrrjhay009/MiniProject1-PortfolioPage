@@ -231,6 +231,7 @@ svg {
     font-size: 2rem;
     font-weight: bolder;
     color: var(--bs-gray-100);
+    /* padding: 0 1rem; */
 }
   
 .about__description {
@@ -293,6 +294,25 @@ svg {
     font-size: 1rem;
     color: var(--bs-gray-400);
 }
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    height: 80vh;
+}
+
+.testimonials__title {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--bs-gray-100);
+}
+  
+.testimonials__description {
+    font-size: 1rem;
+    color: var(--bs-gray-400);
+}
+
+
 
 /* CONTACT SECTION */
 .contact {
