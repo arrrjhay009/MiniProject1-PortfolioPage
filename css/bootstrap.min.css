@@ -3831,7 +3831,7 @@ fieldset:disabled .btn {
 .tab-content > .active {
   display: block;
   height: 30ch;
-  overflow: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .navbar {
