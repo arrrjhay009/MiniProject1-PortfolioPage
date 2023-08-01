@@ -173,6 +173,7 @@ svg {
 #navbarNav {
     justify-content: flex-end;
     padding-right: 1rem;
+    font-weight: 800;
 }
 
 /* HERO SECTION */
@@ -274,10 +275,20 @@ svg {
     margin-top: 2rem;
 }
 
-.nav-link {
-  color: var(--bs-gray-100);
+#education-tab,
+#skills-tab,
+#experience-tab {
+  color: var(--bs-green);
   font-weight: 600;
 }
+
+#education-tab:hover,
+#skills-tab:hover,
+#experience-tab:hover {
+    background-color: #198754;
+    color: var(--bs-gray-100);
+    font-weight: 600;
+  }
 
 /* PROJECTS SECTION */
 .projects {

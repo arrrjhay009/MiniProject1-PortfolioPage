@@ -3729,7 +3729,7 @@ fieldset:disabled .btn {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--bs-nav-link-hover-color);
+  color: var(--bs-green);
 }
 .nav-link:focus-visible {
   outline: 0;
@@ -3830,6 +3830,9 @@ fieldset:disabled .btn {
 }
 .tab-content > .active {
   display: block;
+  height: 30ch;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .navbar {
   --bs-navbar-padding-x: 0;
