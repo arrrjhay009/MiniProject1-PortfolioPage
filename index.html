@@ -7,10 +7,9 @@
     <meta name="keywords" content="web design, html, css, portfolio, John Doe">
     <title>John Doe - Portfolio</title>
 
-    <!-- EXTERNAL RESOURCES -->
 
-    <!-- Bootstrap CDN Link -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <!-- EXTERNAL RESOURCES -->
+    <!-- Bootstrap Link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Google Fonts Link -->
@@ -38,74 +37,59 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Projects
-                              </a>
+                              <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">Works</a>
                               <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#projects">Projects</a></li>
                                 <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                          </ul>
                   </div>
-                </div>
+            </div>
         </nav>
     </header>
-
 
     <main>
         <!-- HERO SECTION -->
         <section id="hero" class="hero container">
-            <img class="hero__img" src="images/profileImage.webp" alt="Photo by Mark Farías on Unsplash">
+            <img class="hero__img" src="https://raw.githubusercontent.com/KodeGoBootcamp-Projects/Exercise_Images/main/profileImage.webp" alt="Photo by Mark Farías on Unsplash">
             <h2 class="hero__subtitle">Hello! I'm John Doe 👋</h2>
             <h1 class="hero__title">FRONT-END <br>WEB DEVELOPER.</h1>
             <p class="hero__description">
             A passionate and creative <strong>Front-End Web Developer</strong> with a strong focus on crafting user-friendly and visually appealing websites. With a background in computer science and several years of professional experience, I specialize in front-end development, responsive design, and creating seamless user experiences. I am committed to staying up-to-date with the latest web technologies and best practices to deliver high-quality projects.
             </p>
-            <a class="btn btn-success" href="#">Reach out</a>
+            <a class="btn btn-success" href="#contact">Reach out</a>
         </section>
 
         <!-- ABOUT SECTION -->
         <section id="about" class="about container">
             <div class="about__content">
                 <h2 class="about__title">About Me</h2>
-                <p class="about__description">
-                I'm a highly motivated individual who thrives on challenges and constantly seeks opportunities to expand my skillset. My journey as a web developer began during my college days when I realized the power of turning ideas into functional and visually stunning websites. Since then, I have been on a quest to create meaningful web experiences that leave a lasting impact on users.
-                </p>
+                <p class="about__description">I'm a highly motivated individual who thrives on challenges and constantly seeks opportunities to expand my skillset. My journey as a web developer began during my college days when I realized the power of turning ideas into functional and visually stunning websites. Since then, I have been on a quest to create meaningful web experiences that leave a lasting impact on users.</p>
                 <hr class="about__hr">
-                <div class="about__skills">
+                <div class="about__skills container">
+                    <!-- Bootstrap Nav&Tabs -->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="true">Skills</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="false">Experience</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button>
-                        </li>
-                      </ul>
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="true">Skills</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="false">Experience</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button></li>
+                    </ul>
                       <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+                          <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
                             <ul class="about__ul">
-                            <li class="about__list" style="color: var(--bs-success);">Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Bootstrap, Material UI</li>
-                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar bg-success" style="width: 90%"></div>
-                            </div></li>
-                            <li class="about__list" style="color: var(--bs-warning);">Back-end: Node.js</li>
-                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar bg-warning" style="width: 95%"></div></div></li>
-                            <li class="about__list" style="color: var(--bs-danger);">Database: MongoDB, MySQL</li>
-                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar bg-danger" style="width: 87%"></div></div></li>
-                            <li class="about__list" style="color: var(--bs-info);">Version Control: Git, GitHub, Bitbucket</li>
-                            <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                              <div class="progress-bar bg-info" style="width: 100%"></div></div></li>
-                            <li class="about__list" style="color: var(--bs-light);">Other: RESTful APIs, JSON, Responsive Web Design, Cross-Browser Compatibility, Web Performance Optimization</li>
-                        </ul></div>
+                              <li class="about__list" style="color: var(--bs-success);">Front-end: HTML5, CSS3, JavaScript (ES6+), React.js, Angular, Vue.js, Bootstrap, Material UI</li>
+                              <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success" style="width: 90%"></div></div></li>
+                              <li class="about__list" style="color: var(--bs-warning);">Back-end: Node.js</li>
+                              <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width: 95%"></div></div></li>
+                              <li class="about__list" style="color: var(--bs-danger);">Database: MongoDB, MySQL</li>
+                              <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-danger" style="width: 87%"></div></div></li>
+                              <li class="about__list" style="color: var(--bs-info);">Version Control: Git, GitHub, Bitbucket</li>
+                              <li><div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-info" style="width: 100%"></div></div></li>
+                              <li class="about__list" style="color: var(--bs-light);">Other: RESTful APIs, JSON, Responsive Web Design, Cross-Browser Compatibility, Web Performance Optimization</li>
+                            </ul>
+                          </div>
                         <div class="tab-pane fade" id="experience-tab-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
                           <ul class="about__ul">
                             <li class="about__listTitle">Web Developer - Tech Solutions Inc.</li>
@@ -113,8 +97,8 @@
                             <li class="about__list">Collaborated with cross-functional teams to deliver web projects for clients.</li>
                             <li class="about__list">Developed and maintained responsive websites to improve user experience and drive engagement.</li>
                             <li class="about__list">Conducted code reviews and provided feedback to ensure code quality and standards.</li>
-                        </ul>
-                        <ul class="about__ul">
+                          </ul>
+                          <ul class="about__ul">
                             <li class="about__listTitle">Junior Web Developer - WebWorks Agency</li>
                             <li class="about__list">January 20XX - December 20XX</li>
                             <li class="about__list">Assisted in front-end development tasks for various client projects.</li>
@@ -138,10 +122,10 @@
         <section id="projects" class="projects container">
           <div class="projects__content">
             <h2 class="projects__title">Projects</h2>
-      <p class="projects__description">
-        These are the projects that I've been working on this past years of being a Web Developer
-      </p>
-      <hr class="about__hr">
+            <p class="projects__description">
+              These are the projects that I've been working on this past years of being a Web Developer
+            </p>
+            <hr class="about__hr">
             <div id="carouselExampleCaptions" class="carousel slide">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -150,19 +134,19 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="images/portfolio.webp" class="d-block w-100" alt="Portfolio Webpage">
+                  <img src="https://raw.githubusercontent.com/KodeGoBootcamp-Projects/Exercise_Images/main/portfolio.webp" class="d-block w-100" alt="Portfolio Webpage">
                   <div class="carousel-caption d-none d-md-block">
                     <a class="btn btn-success" href="https://arrrjhay009.github.io/PF-Exercise/" target="_blank">Visit Website</a>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/photoGallery.webp" class="d-block w-100" alt="Photo Gallery Website">
+                  <img src="https://raw.githubusercontent.com/KodeGoBootcamp-Projects/Exercise_Images/main/photoGallery.webp" class="d-block w-100" alt="Photo Gallery Website">
                   <div class="carousel-caption d-none d-md-block">
                     <a class="btn btn-success" href="https://arrrjhay009.github.io/CSS-Exercise2/" target="_blank">Visit Website</a>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/teaShop.webp" class="d-block w-100" alt="Teashop Website">
+                  <img src="https://raw.githubusercontent.com/KodeGoBootcamp-Projects/Exercise_Images/main/teaShop.webp" class="d-block w-100" alt="Teashop Website">
                   <div class="carousel-caption d-none d-md-block">
                     <a class="btn btn-success" href="https://arrrjhay009.github.io/CSS-Exercise/" target="_blank"> Visit Website</a>
                   </div>
@@ -184,39 +168,38 @@
       <section id="testimonials" class="testimonials container">
         <div class="testimonials__content">
           <h2 class="testimonials__title">Testimonials</h2>
-    <p class="testimonials__description">
-      These are some of the testimonials that I've received for the past years of being a Web Developer
-    </p>
-    <hr class="about__hr">
-        <div class="row">
-          <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-header">
-                Testimonial 1
+          <p class="testimonials__description">
+            These are some of the testimonials that I've received for the past years of being a Web Developer
+          </p>
+          <hr class="about__hr">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-header">
+                  Testimonial 1
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                   <p style="font-size: 0.875rem;">"Working with John Doe was an absolute pleasure. His exceptional web development skills, attention to detail, and commitment to delivering a top-notch product made our project a resounding success. From the initial concept to the final implementation, John Doe demonstrated a deep understanding of our requirements and brought innovative solutions to the table. They were responsive to our feedback, making timely adjustments, and always went the extra mile to ensure the website exceeded our expectations. I highly recommend John Doe to anyone seeking a talented and reliable web developer."</p>
+                   <footer class="blockquote-footer" style="font-size: 0.800rem;">Juan Dela Cruz, <cite title="Source Title">CEO of JuanDC Corp.</cite></footer>
+                  </blockquote>
+                </div>
               </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p style="font-size: 0.875rem;">"Working with John Doe was an absolute pleasure. His exceptional web development skills, attention to detail, and commitment to delivering a top-notch product made our project a resounding success. From the initial concept to the final implementation, John Doe demonstrated a deep understanding of our requirements and brought innovative solutions to the table. They were responsive to our feedback, making timely adjustments, and always went the extra mile to ensure the website exceeded our expectations. I highly recommend John Doe to anyone seeking a talented and reliable web developer."</p>
-                  <footer class="blockquote-footer" style="font-size: 0.800rem;">Juan Dela Cruz, <cite title="Source Title">CEO of JuanDC Corp.</cite></footer>
-                </blockquote>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header">
+                  Testimonial 2
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p style="font-size: 0.875rem">"I cannot speak highly enough of John Doe's work. They are a true professional with a passion for web development and a keen eye for design. Throughout our collaboration, John Doe exhibited remarkable technical expertise, tackling complex challenges with ease. Their ability to communicate technical concepts in a clear and understandable manner was particularly impressive. Not only did John Doe deliver a visually stunning website, but they also ensured its functionality was seamless and user-friendly.</p>
+                    <footer class="blockquote-footer" style="font-size: 0.800rem;">Jane Dolly, <cite title="Source Title">COO of Jane Co. </cite></footer>
+                  </blockquote>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-header">
-                Testimonial 2
-              </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p style="font-size: 0.875rem">"I cannot speak highly enough of John Doe's work. They are a true professional with a passion for web development and a keen eye for design. Throughout our collaboration, John Doe exhibited remarkable technical expertise, tackling complex challenges with ease. Their ability to communicate technical concepts in a clear and understandable manner was particularly impressive. Not only did John Doe deliver a visually stunning website, but they also ensured its functionality was seamless and user-friendly.</p>
-                  <footer class="blockquote-footer" style="font-size: 0.800rem;">Jane Dolly, <cite title="Source Title">COO of Jane Co. </cite></footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-
         </div>
       </section>
 
@@ -225,7 +208,7 @@
         <div class="contact__container">
           <h2 class="contact__title">Get In Contact</h2>
           <div class="contact__left">
-              <h2 class="contact__heading--h2">Hit me up!</h2>
+              <h2 class="contact__h2">Hit me up!</h2>
               <p><i class="fa-solid fa-envelope fa-xl"></i>johndoe01@gmail.com</p>
               <p><i class="fa-solid fa-phone fa-xl"></i>+ 639 912 345 6789</p>
               <div class="contact__left--icons">
@@ -272,6 +255,9 @@
     </svg></button>
 
 
+
+    <!-- SCRIPTS -->
+
     <!-- Embedded Script for Back to Top feature -->
     <script>
       // Get the button:
@@ -300,5 +286,6 @@
     
     <!-- FONTAWESOME RESOURCE SCRIPT -->
     <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous" defer></script>
+
 </body>
 </html>
