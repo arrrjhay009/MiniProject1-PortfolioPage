@@ -1,5 +1,5 @@
 .container {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -19,7 +19,7 @@
 
     #about {
         margin-top: 2rem;
-        height: 135vh;
+        height: 80vh;
     }
 
     .projects {
@@ -66,12 +66,12 @@
       max-width: 640px;
     }
 
-    /* .about {
-        height: 250vh;
-    } */
+    #about {
+        height: 75vh;
+    }
 
     #testimonials {
-      height: 100vh;
+      height: 70vh;
     }
 
     .contact {
@@ -85,20 +85,20 @@
       max-width: 768px;
     }
 
-    .about {
-        height: 115vh;
+    #about {
+        height: 75vh;
     }
 
-    .projects {
-        height: 80vh;
+    #projects {
+        height: 55vh;
     }
 
     .project__link {
       pointer-events: none;
     }
 
-    .testimonials {
-      height: 90vh;
+    #testimonials {
+      height: 65vh;
     }
 
     .contact__container {
@@ -140,11 +140,15 @@
     .projects {
         height: fit-content;
     }
-  
-    /* .section {
-      margin-top: 10rem;
-    } */
 
+    #about {
+      height: 70vh;
+    }
+
+    #testimonials {
+      height: 60vh;
+    }
+  
   }
   
   /* xl */
